@@ -54,8 +54,14 @@
                 color: $dark;
             }
             p {
-                color: $grey;
+                color: $white;
+                opacity: .6;
             }
+            .grey {
+                color: $grey;
+                opacity: 1;
+            }
+            
         }
         .work-seeon-s, .work-seeon-l {
             position: absolute;

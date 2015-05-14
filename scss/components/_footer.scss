@@ -1,7 +1,10 @@
 // Header & Footer Styles
 
 header {
-    padding: 10%;
+    padding: 6%;
+    @media #{$media-m} {
+      padding: 10%;
+    }
     a {
         text-decoration: none;
         color: $dark;
@@ -25,7 +28,10 @@ header {
 
 footer {
     @include zero;
-    padding: 10%;
+    padding: 6%;
+    @media #{$media-m} {
+      padding: 10%;
+    }
     .copyright {
         color: $grey;
     }
