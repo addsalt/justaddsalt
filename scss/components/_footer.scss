@@ -1,7 +1,7 @@
 // Header & Footer Styles
 
 header {
-    padding: 6%;
+    padding: 21px;
     @media #{$media-m} {
       padding: 10%;
     }
@@ -28,7 +28,7 @@ header {
 
 footer {
     @include zero;
-    padding: 6%;
+    padding: 21px;
     @media #{$media-m} {
       padding: 10%;
     }
@@ -45,5 +45,22 @@ footer {
             font-style: italic;
             text-decoration: none;
         }
+    }
+    .tres {
+        line-height: 27px;
+    }
+}
+
+/* Spacings and Stuff */
+
+header {
+    h1 {
+        margin-top: 63px;
+    }
+    .contact-info {
+        margin-top: 21px;
+    }
+    .intro {
+        margin-top: 21px;
     }
 }

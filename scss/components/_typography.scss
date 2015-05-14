@@ -30,11 +30,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $cooper;
     font-weight: inherit;
-    line-height: .9;
 }
 
 h1, .uno {
-  font-size: 54px;
+  font-size: 54px; line-height: 45px;
 }
 
 h2, .dos {font-size: 24px; line-height: 24px;}
