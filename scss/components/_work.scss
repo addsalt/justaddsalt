@@ -1,0 +1,61 @@
+// Work CSS
+
+#work {
+    figure {
+        overflow-x: hidden;
+        position: relative;
+        h2, p, a {
+            @include zero;
+        }
+        .work-bg {
+            width: 180%;
+            -webkit-transform: translateX(-20%);
+            -moz-transform: translateX(-20%);
+            -ms-transform: translateX(-20%);
+            -o-transform: translateX(-20%);
+            transform: translateX(-20%);
+            @media only screen and (min-width: 35em) {
+                width: 100%;
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        .work-top {
+            position: absolute;
+            bottom: 0;
+            width: 70%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        .work-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .work-seeon-s {
+            display: block;
+            @media only screen and (min-width: 35em) {
+                display: none;
+            }
+        }
+        .work-seeon-l {
+            display: none;
+            @media only screen and (min-width: 35em) {
+                display: block;
+            }
+        }
+        .work-seeon-s, .work-seeon-l {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
