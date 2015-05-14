@@ -1,14 +1,31 @@
 // Header & Footer Styles
 
 header {
+    padding: 10%;
     a {
         text-decoration: none;
         color: $dark;
+    }
+    @media only screen and (min-width: 38em) {
+        ul {
+            li {
+                display: inline-block;
+                line-height: .9;
+                padding: 1px 10px 3px;
+            }
+            li:first-child {
+                padding-left: 0px;
+            }
+            li:last-child {
+                border-left: solid 2px $dark;
+            }
+        }
     }
 }
 
 footer {
     @include zero;
+    padding: 10%;
     .copyright {
         color: $grey;
     }

@@ -6,6 +6,15 @@
         position: relative;
         h2, p, a {
             @include zero;
+            letter-spacing: 0.02em;
+        }
+        .dark {
+            color: $dark;
+        }
+        a {
+            color: $white;
+            opacity: .6;
+            text-decoration: none;
         }
         .work-bg {
             width: 180%;
@@ -36,8 +45,22 @@
         }
         .work-title {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 1rem;
+            left: 1rem;
+            h2 {
+                color: $white;
+            }
+            .dark {
+                color: $dark;
+            }
+            p {
+                color: $grey;
+            }
+        }
+        .work-seeon-s, .work-seeon-l {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
         }
         .work-seeon-s {
             display: block;
@@ -50,11 +73,6 @@
             @media only screen and (min-width: 35em) {
                 display: block;
             }
-        }
-        .work-seeon-s, .work-seeon-l {
-            position: absolute;
-            top: 0;
-            right: 0;
         }
     }
 }

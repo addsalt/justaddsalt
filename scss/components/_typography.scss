@@ -11,7 +11,7 @@
 }
 
 body {
-    font-size: 100%;
+    font-size: 14px;
     background-color: $white;
     font-family: $clarendon;
     font-weight: 400;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .uno {
-  font-size: 3.375em;
+  font-size: 5.0625em;
 }
 
 h2, .dos {font-size: 1.5em;}
@@ -50,8 +50,16 @@ small, .font_small, .work-title p, figcaption a {font-size: .833125em;}
     font-family: $cooper;
 }
 
+.dark {
+    color: $dark;
+}
+
 .red {
     color: $red;
+}
+
+.white {
+    color: $white;
 }
 
 .no-margin {
