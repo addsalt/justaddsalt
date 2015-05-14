@@ -11,12 +11,12 @@
 }
 
 body {
-    font-size: 1rem;
-    background-color: white;
-    font-family: 'chaparral-pro', sans-serif;
+    font-size: 100%;
+    background-color: $white;
+    font-family: $clarendon;
     font-weight: 400;
     line-height: 1.45;
-    color: $body;
+    color: $dark;
     box-sizing: border-box;
 }
 
@@ -27,52 +27,32 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 1.414em 0 0.5em;
+    font-family: $cooper;
     font-weight: inherit;
     line-height: .9;
-    font-family: $english;
-    letter-spacing: 1px;
 }
 
 h1, .uno {
-  font-size: 2.25em;
+  font-size: 3.375em;
 }
 
-h2, .dos {font-size: 1.75em;}
+h2, .dos {font-size: 1.5em;}
 
-h3, .tres {font-size: 1.35em;}
+h3, .tres {font-size: 1em;}
 
-h4, .cuatro {font-size: 1.25em;}
-
-.p_large, .pull_quote {font-size: 1.05em}
-
-.p_large {letter-spacing: -0.018em;}
-
-p, .main ul  {font-size: 0.95em; margin-top: 1.3em;}
-
-small, .font_small {font-size: 0.667em;}
+small, .font_small, .work-title p, figcaption a {font-size: .833125em;}
 
 
 @media only screen and (min-width: 38em) {
-    h1, .uno {
-      font-size: 5.063em;
-    }
-    
-    h2, .dos {font-size: 3.375em;}
-
-    h3, .tres {font-size: 2.25em;}
-
-    h4, .cuatro {font-size: 1.5em;}
-
-    .p_large, .pull_quote {font-size: 1.35em}
-
-    .p_small {font-size: 0.96em;}
-    
-    p, .main ul  {font-size: 1.05em}
-
-    small, .font_small {font-size: 0.867em;}
 }
 
+.brand {
+    font-family: $cooper;
+}
+
+.red {
+    color: $red;
+}
 
 .no-margin {
     @include zero;
@@ -82,20 +62,12 @@ small, .font_small {font-size: 0.667em;}
     margin-top: 0;
 }
 
-.half-margin-top {
-    margin-top: 1.2rem;
-}
-
 .center-align {
     text-align: center;
 }
 
 .left-align {
     text-align: left;
-}
-
-.linkreset {
-    @include linkreset($orange);
 }
 
 ul {

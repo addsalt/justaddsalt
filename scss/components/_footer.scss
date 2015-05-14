@@ -1,5 +1,26 @@
-// Footer Styles
+// Header & Footer Styles
+
+header {
+    a {
+        text-decoration: none;
+        color: $dark;
+    }
+}
 
 footer {
     @include zero;
+    .copyright {
+        color: $grey;
+    }
+    ul {
+        li {
+            font-family: $cooper;
+        }
+        a {
+            font-family: $clarendon;
+            color: $red;
+            font-style: italic;
+            text-decoration: none;
+        }
+    }
 }
