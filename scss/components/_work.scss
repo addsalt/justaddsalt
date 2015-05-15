@@ -3,6 +3,7 @@
 #work {
     figure {
         overflow-x: hidden;
+        overflow-y: hidden;
         position: relative;
         h2, p, a {
             @include zero;
@@ -36,8 +37,9 @@
         }
         .work-top {
             position: absolute;
-            bottom: 0;
+            top: 10%;
             width: 70%;
+            max-width: 700px;
             left: 50%;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
@@ -58,6 +60,7 @@
             p {
                 color: $white;
                 opacity: .6;
+                line-height: 16px;
             }
             .grey {
                 color: $grey;
