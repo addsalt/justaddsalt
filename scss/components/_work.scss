@@ -22,6 +22,16 @@
             color: $white;
             text-decoration: none;
         }
+        .i-behance {
+            -webkit-transition: all 150ms linear;
+            -moz-transition: all 150ms linear;
+            -ms-transition: all 150ms linear;
+            -o-transition: all 150ms linear;
+            transition: all 150ms linear;
+        }
+        a:hover .i-behance {
+            opacity: .6;
+        }
         .a-text {
             opacity: .6;
         }
@@ -32,7 +42,7 @@
             -ms-transform: translateX(-20%);
             -o-transform: translateX(-20%);
             transform: translateX(-20%);
-            @media only screen and (min-width: 35em) {
+            @media #{$media-m} {
                 width: 100%;
                 -webkit-transform: translateX(0);
                 -moz-transform: translateX(0);
@@ -43,15 +53,30 @@
         }
         .work-top {
             position: absolute;
-            top: 10%;
             width: 70%;
-            max-width: 700px;
+            max-width: 800px;
             left: 50%;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
             -o-transform: translateX(-50%);
             transform: translateX(-50%);
+        }
+        .work-usil {
+            bottom: 0;
+            @media #{$media-m} {
+                top: 5rem;
+            }
+            @media only screen and (min-width: 80em) {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        .work-explorandes {
+            bottom: 0;
+            @media #{$media-m} {
+                top: 5rem;
+            }
         }
         .work-title {
             position: absolute;
@@ -90,15 +115,18 @@
         }
         .work-seeon-s {
             display: block;
-            @media only screen and (min-width: 35em) {
+            @media only screen and (min-width: 38em) {
                 display: none;
             }
         }
         .work-seeon-l {
             display: none;
-            @media only screen and (min-width: 35em) {
+            @media only screen and (min-width: 38em) {
                 display: block;
             }
+        }
+        .seeon-red {
+            color: #fc483f;
         }
     }
 }
