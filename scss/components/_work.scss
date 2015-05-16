@@ -7,7 +7,13 @@
         position: relative;
         h2, p, a {
             @include zero;
-            letter-spacing: 0.02em;
+        }
+        h2 {
+            letter-spacing: 0.05em;
+        }
+        p, a {
+            letter-spacing: 0.03em;
+            font-size: 12.75px;
         }
         .dark {
             color: $dark;
@@ -51,8 +57,13 @@
             position: absolute;
             top: 1rem;
             left: 1rem;
+            @media #{$media-l} {
+                top: 35px;
+                left: 35px;
+            }
             h2 {
                 color: $white;
+                margin-bottom: 9px;
             }
             .dark {
                 color: $dark;
@@ -72,6 +83,10 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
+            @media #{$media-l} {
+                top: 27px;
+                right: 35px;
+            }
         }
         .work-seeon-s {
             display: block;
@@ -88,3 +103,10 @@
     }
 }
 
+.bg-woodworks {
+    background-color: #35383a;
+}
+
+.bg-lovestinks {
+    background-color: #f1ad1e;
+}
