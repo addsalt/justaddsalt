@@ -42,3 +42,26 @@ body, html {width: 100%; padding: 0; margin: 0;}
 .no-spacing {
 	margin: 0;
 }
+
+.push-top-1 {
+    display: block;
+    margin-top: 15px;
+}
+
+.push-top-2 {
+    display: block;
+    margin-top: 22.5px;
+}
+
+.push-top-3 {
+    display: block;
+    margin-top: 30px;
+}
+
+.push-top-3-mb {
+    display: block;
+    margin-top: 30px;
+    @media #{$media-l} {
+        margin-top: 0px;
+    }
+}

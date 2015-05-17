@@ -30,10 +30,11 @@ footer {
     @include zero;
     padding: 21px;
     @media #{$media-m} {
-      padding: 10%;
+      padding: 84px 10%;
     }
     .copyright {
         color: $grey;
+        line-height: 16px;
     }
     ul {
         li {
@@ -48,6 +49,35 @@ footer {
     }
     .tres {
         line-height: 27px;
+    }
+    .foot-holder {
+        display: block;
+        overflow: auto;
+    }
+    .col {
+        display: block;
+    }
+    @media #{$media-l} {
+        .col {
+            float: left;
+        }
+        .col-1 {
+            width: 40%;
+        }
+        .col-2 {
+            width: 40%;
+            padding-top: 24px;
+            padding-right: 2rem;
+        }
+        .col-3 {
+            padding-top: 24px;
+            width: 20%;
+        }
+    }
+    @media only screen and (min-width: 80em) {
+        .col-2 {
+            padding-right: 9rem;
+        }
     }
 }
 
@@ -69,4 +99,8 @@ footer {
     h1 {
         margin-bottom: 9px;
     }
+}
+
+.intro {
+    max-width: 33rem;
 }

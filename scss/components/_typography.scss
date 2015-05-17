@@ -77,3 +77,18 @@ small, .font_small, .work-title p, figcaption a {font-size: 13.333px;}
 ul {
 	list-style-type: none;
 }
+
+.kern-left-1 {
+    display: inline-block;
+    margin-left: -1px;
+}
+
+.kern-left-2 {
+    display: inline-block;
+    margin-left: -2px;
+}
+
+.kern-right-1 {
+    display: inline-block;
+    margin-left: 1px;
+}
