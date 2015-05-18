@@ -1,6 +1,7 @@
 // Header & Footer Styles
 
 header {
+    text-align: center;
     padding: 21px;
     @media #{$media-m} {
       padding: 10%;
@@ -85,6 +86,7 @@ footer {
 
 header {
     h1 {
+        font-size: 81px;
         margin-top: 63px;
     }
     .contact-info {
@@ -103,4 +105,5 @@ footer {
 
 .intro {
     max-width: 33rem;
+    margin: 0 auto;
 }
