@@ -7,6 +7,23 @@
     to {opacity: 1;}
 }
 
+.fadein {
+    -webkit-animation: fadein 450ms linear forwards;
+    -moz-animation: fadein 450ms linear forwards;
+    -ms-animation: fadein 450ms linear forwards;
+    -o-animation: fadein 450ms linear forwards;
+    animation: fadein 450ms linear forwards;
+}
+
+.delay-1 {
+    opacity: 0;
+    -webkit-animation-delay: 625ms;
+    -moz-animation-delay: 625ms;
+    -ms-animation-delay: 625ms;
+    -o-animation-delay: 625ms;
+    animation-delay: 625ms;
+}
+
 header {
     .logo-l {
         -webkit-animation: fadein 450ms linear;
