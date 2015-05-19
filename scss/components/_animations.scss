@@ -86,8 +86,8 @@ header {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 60%, 0);
+    transform: translate3d(0, 60%, 0);
   }
 
   100% {
@@ -98,9 +98,9 @@ header {
 }
 
 .fadeInUp {
-    -webkit-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
-    -moz-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
-    -ms-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
-    -o-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
-    animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
+    -webkit-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
+    -moz-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
+    -ms-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
+    -o-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
+    animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
 }
