@@ -56,6 +56,76 @@
     animation-delay: 625ms;
 }
 
+/* Work Animations */
+
+@media #{$media-l} {
+    
+    /* Fade up from bottom of figure */
+    
+    .js-exp-fade {
+        -webkit-animation: jsExpFade 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    }
+
+    @-webkit-keyframes jsExpFade {
+        0% {
+            opacity: 0;
+            top: 100%;
+        }
+        
+        85% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: 1;
+            top: 5rem;
+        }
+    }
+    
+    /* Title and Behance slide Left/Right */
+    
+    .work-title {
+        -webkit-transform: translateX(-150%);
+    }
+    
+    .work-seeon-l {
+        -webkit-transform: translateX(150%);
+    }
+    
+    .js-slideLeftFade {
+        -webkit-animation: jsLeft 350ms cubic-bezier(.58,.36,.6,.79) forwards;
+    }
+    
+    @-webkit-keyframes jsLeft {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-100%);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+        }
+    }
+    
+    .js-slideRightFade {
+        -webkit-animation: jsRight 350ms cubic-bezier(.58,.36,.6,.79) forwards;
+    }
+    
+    @-webkit-keyframes jsRight {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(100%);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+        }
+    }
+    
+}
+
 
 /*
 header {
@@ -102,66 +172,3 @@ header {
         animation-delay: 750ms;
     }     
 }*/
-
-
-/* Work Animations */
-
-@media #{$media-l} {
-    
-    .js-exp-fade {
-        -webkit-animation: jsExpFade 600ms cubic-bezier(.58,.36,.6,.79) forwards;
-    }
-
-    @-webkit-keyframes jsExpFade {
-        0% {
-            opacity: 0;
-            top: 100%;
-        }
-
-        100% {
-            opacity: 1;
-            top: 5rem;
-        }
-    }
-    
-    .work-title {
-        -webkit-transform: translateX(-150%);
-    }
-    
-    .work-seeon-l {
-        -webkit-transform: translateX(150%);
-    }
-    
-    .js-slideLeftFade {
-        -webkit-animation: jsLeft 600ms cubic-bezier(.58,.36,.6,.79) forwards;
-    }
-    
-    @-webkit-keyframes jsLeft {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateX(-100%);
-        }
-
-        100% {
-            opacity: 1;
-            -webkit-transform: translateX(0);
-        }
-    }
-    
-    .js-slideRightFade {
-        -webkit-animation: jsRight 600ms cubic-bezier(.58,.36,.6,.79) forwards;
-    }
-    
-    @-webkit-keyframes jsRight {
-        0% {
-            opacity: 0;
-            -webkit-transform: translateX(100%);
-        }
-
-        100% {
-            opacity: 1;
-            -webkit-transform: translateX(0);
-        }
-    }
-    
-}
