@@ -25,14 +25,6 @@ header {
             }
         }
     }
-    h1:nth-letter(1) {
-        -webkit-animation: fadein 1250ms linear;
-        -moz-animation: fadein 1250ms linear;
-        -ms-animation: fadein 1250ms linear;
-        -o-animation: fadein 1250ms linear;
-        animation: fadein 1250ms linear;
-    }  
-    
 }
 
 footer {
@@ -133,9 +125,4 @@ footer {
             max-width: 1200px;
         }
     }
-}
-
-@keyframes fadein {
-    from {opacity: 0;}
-    top {opacity: 1;}
 }
