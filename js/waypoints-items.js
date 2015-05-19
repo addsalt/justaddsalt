@@ -4,7 +4,7 @@ var $win = $(window);
 var $expTrigger = $('#explorandes');
 var $expTitle = $('#explorandes .work-title');
 var $expSeeOn = $('#explorandes .work-seeon-l');
-//var $expPiece = $('.work-explorandes');
+var $expPiece = $('.work-explorandes');
 
 var $airTrigger = $('#airugo');
 var $airTitle = $('#airugo .work-title');
@@ -105,3 +105,14 @@ $frontTrigger.waypoint(function() {
 $frontTrigger.waypoint(function() {
 	$frontSeeOn.addClass('js-slideRightFade');
 }, { offset:'65%' });
+
+
+// Parallax Animations
+
+var $expPieceImg = $('.work-explorandes>img');
+
+$win.on('scroll', function() {
+	var scrollPos=$win.scrollTop();
+	
+	$expPieceImg.css('margin-top', -scrollPos * .28 + 'px');
+});
