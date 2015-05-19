@@ -1,19 +1,51 @@
-// Animation
+/* Keyframes */
 
-/* Animations */
-
-@keyframes fadein {
+@keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-.fadein {
-    -webkit-animation: fadein 450ms linear forwards;
-    -moz-animation: fadein 450ms linear forwards;
-    -ms-animation: fadein 450ms linear forwards;
-    -o-animation: fadein 450ms linear forwards;
-    animation: fadein 450ms linear forwards;
+@-webkit-keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(8rem);
+    transform: translateY(8rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
+@keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(8rem);
+    transform: translateY(8rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -moz-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -ms-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -o-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+}
+
+.fadeInUp {
+    opacity: 0;
+    -webkit-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -moz-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -ms-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -o-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+}
+
+/* Delays */
 
 .delay-1 {
     opacity: 0;
@@ -23,6 +55,8 @@
     -o-animation-delay: 625ms;
     animation-delay: 625ms;
 }
+
+
 /*
 header {
     .logo-l {
@@ -68,39 +102,3 @@ header {
         animation-delay: 750ms;
     }     
 }*/
-    
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(4rem);
-    transform: translateY(4rem);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(4rem);
-    transform: translateY(4rem);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.fadeInUp {
-    -webkit-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
-    -moz-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
-    -ms-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
-    -o-animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
-    animation: fadeInUp 550ms cubic-bezier(.58,.36,.6,.79);
-}
