@@ -23,7 +23,7 @@
     -o-animation-delay: 625ms;
     animation-delay: 625ms;
 }
-
+/*
 header {
     .logo-l {
         -webkit-animation: fadein 450ms linear;
@@ -67,7 +67,7 @@ header {
         -o-animation-delay: 750ms;
         animation-delay: 750ms;
     }     
-}
+}*/
     
 @-webkit-keyframes fadeInUp {
   0% {
@@ -98,9 +98,9 @@ header {
 }
 
 .fadeInUp {
-    -webkit-animation: fadeInUp 450ms linear;
-    -moz-animation: fadeInUp 450ms linear;
-    -ms-animation: fadeInUp 450ms linear;
-    -o-animation: fadeInUp 450ms linear;
-    animation: fadeInUp 450ms linear;
+    -webkit-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
+    -moz-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
+    -ms-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
+    -o-animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
+    animation: fadeInUp 450ms cubic-bezier(.58,.36,.6,.79);
 }
