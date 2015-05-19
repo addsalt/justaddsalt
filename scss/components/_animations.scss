@@ -7,14 +7,6 @@
     to {opacity: 1;}
 }
 
-.fade-in {
-    -webkit-animation: fadein 450ms linear;
-    -moz-animation: fadein 450ms linear;
-    -ms-animation: fadein 450ms linear;
-    -o-animation: fadein 450ms linear;
-    animation: fadein 450ms linear;
-}
-
 header {
     .logo-l {
         -webkit-animation: fadein 450ms linear;
@@ -50,6 +42,7 @@ header {
         -ms-animation-delay: 550ms;
         -o-animation-delay: 550ms;
         animation-delay: 550ms;
+    }
     .logo-5 {
         -webkit-animation-delay: 575ms;
         -moz-animation-delay: 575ms;
@@ -58,7 +51,7 @@ header {
         animation-delay: 575ms;
     }     
 }
-
+    
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
