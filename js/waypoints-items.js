@@ -1,5 +1,13 @@
 var $win = $(window);
 
+//Footer Animations
+var $footerTrigger =$('#footer');
+var $footerCol =$('.col');
+
+$footerTrigger.waypoint(function() {
+    $footerCol.addClass('fadeInUp2');
+}, { offset:'80%'});
+
 // Work specific triggers
 var $expTrigger = $('#explorandes');
 var $expTitle = $('#explorandes .work-title');
