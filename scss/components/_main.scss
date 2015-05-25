@@ -6,6 +6,8 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+::selection {background-color: black; color: white;}
+
 html {
     box-sizing: border-box;
     -moz-text-size-adjust: 100%;

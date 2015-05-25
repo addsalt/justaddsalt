@@ -14,14 +14,18 @@
 	
 	<!-- Header -->
 	<header>
-        <h1 id="logo">Salt.</h1>
-        <ul class="brand contact-info">
-            <li><a href="tel:6132619502">(613) 261 · 9502</a></li>
-            <li><a href="mailto:just@addsalt.ca"><em class="red">just@addsalt.ca</em></a></li>
-        </ul>
-        <p class="intro">We are a small team of independent creatives in Ottawa, Ontario, with a passion for big ideas and an obsession with little details. We specialize in brand development, web, print, graphic design, and art direction. We’re in the business of ideas with good taste.</p>
-        <a class="brand push-top-1" href="#work">See our work below.</a>
-        <a class="brand push-top-2 red" href="http://www.instagram.com/just_addsalt" target="_blank">instagram<i class="i-insta"></i><em>@justaddsalt</em></a>
+        <div class="fadeInUp">
+            <h1>Salt.</h1>
+            <ul class="brand contact-info">
+                <li><a href="tel:6132619502">(613) 261 · 9502</a></li>
+                <li><a href="mailto:just@addsalt.ca"><em class="red">just@addsalt.ca</em></a></li>
+            </ul>
+            <p class="intro">We are a small team of independent creatives in Ottawa, Ontario, with a passion for big ideas, an obsession with little details, and a knack for having <em>ideas that taste good.</em></p>
+        </div>
+        <div class="fadeIn delay-1 bottom">
+            <a class="brand push-top-1" href="#work">See our work below.</a>
+            <a class="brand push-top-2 red" href="http://www.instagram.com/just_addsalt" target="_blank">instagram<i class="i-insta"></i><em>@justaddsalt</em></a>
+        </div>
     </header>
 
 	<!-- Work -->	
@@ -29,7 +33,7 @@
     <main id="work" class="grid">
         
         <!-- Explorandes -->
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+        <div id="explorandes" class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
             <figure>
                 <img class="flex-img work-bg" src="images/salt-explorandes-bg.jpg" alt="">
                 <div class="work-top work-explorandes">
@@ -48,33 +52,29 @@
         
         <!-- AirUGo + Out of the Woodworks -->
         <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 bg-woodworks">
-            <figure>
+            <figure id="airugo">
                 <img class="flex-img" src="images/salt-airugo-bg.jpg" alt="">
                 <figcaption>
                     <div class="work-title">
                         <h2 class="dark tres">AirUGo.</h2>
                         <p class="grey">Branding.</p>
                     </div>
-                    <!--a class="work-seeon-s dark" href="#"><span class="a-text">See on</span> <i class="i-behance"></i></a>
-                    <a class="work-seeon-l dark" href="#"><span class="a-text">See the full project on</span> <i class="i-behance"></i></a>-->
                 </figcaption>
             </figure>
-            <figure>
+            <figure id="woodworks">
                 <img class="flex-img" src="images/salt-woodworks-bg.jpg" alt="">
                 <figcaption>
                     <div class="work-title">
                         <h2 class="tres">Out of the</br>Woodworks.</h2>
                         <p>Branding.</p>
                     </div>
-                    <!--<a class="work-seeon-s" href="#"><span class="a-text">See on</span> <i class="i-behance"></i></a>
-                    <a class="work-seeon-l" href="#"><span class="a-text">See the full project on</span> <i class="i-behance"></i></a>-->
                 </figcaption>
             </figure>
         </div>
         
         <!-- Love Stinks -->
         <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 bg-lovestinks">
-            <figure>
+            <figure id="lovestinks">
                 <img class="flex-img" src="images/salt-lovestinks-bg.jpg" alt="">
                 <figcaption>
                     <div class="work-title">
@@ -88,7 +88,7 @@
         </div>
         
         <!-- USIL -->
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1" id="usil">
             <figure>
                 <img class="flex-img work-bg" src="images/salt-USIL-bg.jpg" alt="">
                 <img class="flex-img work-top work-usil" src="images/salt-USIL.jpg" alt="">
@@ -104,7 +104,7 @@
         </div>
         
         <!-- Human Digestive System -->
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2" id="digestive">
             <figure>
                 <img class="flex-img" src="images/salt-digestive-bg.jpg" alt="">
                 <figcaption>
@@ -119,7 +119,7 @@
         </div>
         
         <!-- Devil's IPA -->
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2" id="ipa">
             <figure>
                 <img class="flex-img" src="images/salt-devilsIPA-bg.jpg" alt="">
                 <figcaption>
@@ -134,7 +134,7 @@
         </div>
         
         <!-- Frontcrush -->
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2" id="frontcrush">
             <figure>
                 <img class="flex-img" src="images/salt-frontcrush-left.jpg" alt="">
                 <figcaption>
@@ -146,7 +146,7 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2" id="frontcrush2">
             <figure>
                 <img class="flex-img" src="images/salt-frontcrush-right.jpg" alt="">
                 <figcaption>
@@ -182,9 +182,15 @@
 	</footer>
 	
 </body>
-    
+
 <script src="//use.typekit.net/vsn8lti.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/waypoints-items.js"></script>
+
 <script>
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
