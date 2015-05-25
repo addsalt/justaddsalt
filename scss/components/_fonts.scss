@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'fontello';
-    src: url('/font/salt-icons.eot?62854643');
-    src: url('/font/salt-icons.eot?62854643#iefix') format('embedded-opentype'),
-       url('/font/salt-icons.woff?62854643') format('woff'),
-       url('/font/salt-icons.ttf?62854643') format('truetype'),
-       url('/font/salt-icons.svg?62854643#fontello') format('svg');
+    font-family: 'fontsalt';
+    src: url('../font/salt-icons.eot?62854643');
+    src: url('../font/salt-icons.eot?62854643#iefix') format('embedded-opentype'),
+       url('../font/salt-icons.woff?62854643') format('woff'),
+       url('../font/salt-icons.ttf?62854643') format('truetype'),
+       url('../font/salt-icons.svg?62854643#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
  [class^="i-"]:before, [class*=" i-"]:before {
-    font-family: "fontello";
+    font-family: "fontsalt";
     font-style: normal;
     font-weight: normal;
     speak: none;
