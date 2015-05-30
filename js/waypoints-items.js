@@ -12,7 +12,6 @@ $footerTrigger.waypoint(function() {
 var $expTrigger = $('#explorandes');
 var $expTitle = $('#explorandes .work-title');
 var $expSeeOn = $('#explorandes .work-seeon-l');
-var $expPiece = $('.work-explorandes');
 
 var $airTrigger = $('#airugo');
 var $airTitle = $('#airugo .work-title');
@@ -115,12 +114,20 @@ $frontTrigger.waypoint(function() {
 }, { offset:'65%' });
 
 
-// Parallax Animations
-
-var $expPieceImg = $('.work-explorandes>img');
+// Scroll Animation
 
 $win.on('scroll', function() {
-	var scrollPos=$win.scrollTop();
-	
-	$expPieceImg.css('margin-top', -scrollPos * .28 + 'px');
-});
+
+    $('.grammys-parallax').each(function(){
+
+        if(  $(this).offset().top < $(document).scrollTop() + $(window).height()/2 ){
+
+            var dif = $(this).offset().top - ( $(document).scrollTop() + $(window).height()/2 );
+
+            $(this).find( 'img' ).css( 'top', 25 + dif / 3 + 'px' );
+
+       }
+
+    });
+
+})
