@@ -134,11 +134,13 @@
 
 .work-scroll {
     position: absolute;
-    top: 1rem;
     overflow: hidden;
     opacity: 1;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0,.7);
+    
+    width: 80%;
+    top: 1.5rem;
     @media #{$media-s} {
         top: 7em;
     }
