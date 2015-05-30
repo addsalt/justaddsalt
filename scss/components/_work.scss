@@ -49,6 +49,14 @@
             -o-transform: translateX(-20%);
             transform: translateX(-20%);
             @media #{$media-m} {
+                width: 125%;
+                -webkit-transform: translateX(-12%);
+                -moz-transform: translateX(-12%);
+                -ms-transform: translateX(-12%);
+                -o-transform: translateX(-12%);
+                transform: translateX(-12%);
+            }
+            @media #{$media-l} {
                 width: 100%;
                 -webkit-transform: translateX(0);
                 -moz-transform: translateX(0);
@@ -56,18 +64,6 @@
                 -o-transform: translateX(0);
                 transform: translateX(0);
             }
-        }
-        .work-top {
-                position: absolute;
-                width: 70%;
-                max-width: 800px;
-                left: 50%;
-                bottom: 0;
-                -webkit-transform: translateX(-50%);
-                -moz-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                -o-transform: translateX(-50%);
-                transform: translateX(-50%);
         }
         .work-title {
             position: absolute;
@@ -132,40 +128,44 @@
     background-color: #f1ad1e;
 }
 
-.work-scroll {
-    position: absolute;
-    overflow: hidden;
+.scroll-parallax {
     opacity: 1;
-    border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0,.7);
+    overflow: hidden;
     
-    width: 80%;
-    top: 1.5rem;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0,.7);
+
+    width: 90%;
+    max-width: 800px;
+    
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 1.25rem;
+    
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
     @media #{$media-s} {
+        top: 3em;
+    }
+
+    @media #{$media-m} {
+        border-radius: 10px 10px 0px 0px;
+        top: 2.5em;
+    }
+
+    @media #{$media-l} {
         top: 7em;
-    }
-    @media #{$media-l} {
-        top: 6em;
-    }
-    @media #{$media-l} {
-        opacity: 1;
         img {
             position: absolute;
-            /*-webkit-transition: all 550ms linear;
-            -moz-transition: all 550ms linear;
-            -ms-transition: all 550ms linear;
-            -o-transition: all 550ms linear;
-            transition: all 550ms linear;*/
+            top: 25px;
+            z-index: 1;
         }
-        /*img:hover {
-            margin-top: -14rem;
-        }*/
     }
-}
-
-.scroll-parallax img {
-    top: 25px;
-    z-index: 1;
 }
 
 .work-scroll:before {
