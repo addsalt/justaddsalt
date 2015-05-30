@@ -5,6 +5,12 @@
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
+        figcaption {
+            display: none;
+            @media #{$media-l} {
+                display: block;
+            }
+        }
         h2, p, a {
             @include zero;
         }
@@ -52,16 +58,16 @@
             }
         }
         .work-top {
-            position: absolute;
-            width: 70%;
-            max-width: 800px;
-            left: 50%;
-            bottom: 0;
-            -webkit-transform: translateX(-50%);
-            -moz-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            transform: translateX(-50%);
+                position: absolute;
+                width: 70%;
+                max-width: 800px;
+                left: 50%;
+                bottom: 0;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
         }
         .work-title {
             position: absolute;

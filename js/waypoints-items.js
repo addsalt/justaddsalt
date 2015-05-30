@@ -6,7 +6,7 @@ var $footerCol =$('.col');
 
 $footerTrigger.waypoint(function() {
     $footerCol.addClass('fadeInUp2');
-}, { offset:'80%'});
+}, { offset:'90%'});
 
 // Work specific triggers
 var $expTrigger = $('#explorandes');
