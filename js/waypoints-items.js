@@ -118,7 +118,7 @@ $frontTrigger.waypoint(function() {
 
 $win.on('scroll', function() {
 
-    $('.grammys-parallax').each(function(){
+    $('.scroll-parallax').each(function(){
 
         if(  $(this).offset().top < $(document).scrollTop() + $(window).height()/2 ){
 
