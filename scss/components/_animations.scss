@@ -40,22 +40,26 @@
     animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
 }
 
-.fadeInUp {
-    opacity: 0;
-    -webkit-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -moz-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -ms-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -o-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-}
+@media #{$media-l} {
 
-.fadeInUp2 {
-    opacity: 0;
-    -webkit-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -moz-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -ms-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -o-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-    animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    .fadeInUp {
+        opacity: 0;
+        -webkit-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -moz-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -ms-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -o-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    }
+
+    .fadeInUp2 {
+        opacity: 0;
+        -webkit-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -moz-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -ms-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -o-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+    }
+    
 }
 
 /* Delays */
