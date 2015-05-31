@@ -2,7 +2,7 @@
 
 header {
     text-align: center;
-    padding: 21px 21px 42px;
+    padding: 42px 21px 57px;
     @media #{$media-m} {
       padding: 10%;
     }
@@ -29,9 +29,9 @@ header {
 
 footer {
     @include zero;
-    padding: 1.4rem;
+    padding: 42px 21px;
     @media #{$media-m} {
-      padding: 84px 10%;
+      padding: 5.25rem 10%;
     }
     .copyright {
         color: $grey;
@@ -86,7 +86,6 @@ footer {
 
 header {
     h1 {
-        margin-top: 63px;
         font-size: 60px; 
         line-height: 1;
         @media #{$media-l} {
