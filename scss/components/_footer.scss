@@ -21,7 +21,7 @@ header {
                 padding-left: 0px;
             }
             li:last-child {
-                border-left: solid 2px $dark;
+                border-left: solid 3px $dark;
             }
         }
     }
@@ -91,6 +91,7 @@ header {
         line-height: 1;
         @media #{$media-l} {
             font-size: 120px;
+            margin-top: 33px;
         }
     }
     .contact-info {

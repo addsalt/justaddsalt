@@ -2,7 +2,7 @@ var $win = $(window);
 
 //Footer Animations
 var $footerTrigger =$('#footer');
-var $footerCol =$('.col');
+var $footerCol =$('#footer');
 
 $footerTrigger.waypoint(function() {
     $footerCol.addClass('fadeInUp2');
@@ -124,7 +124,7 @@ $win.on('scroll', function() {
 
             var dif = $(this).offset().top - ( $(document).scrollTop() + $(window).height()/2 );
 
-            $(this).find( 'img' ).css( 'top', 25 + dif / 3 + 'px' );
+            $(this).find( 'img' ).css( 'top', 25 + dif / 2 + 'px' );
 
        }
 
