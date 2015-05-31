@@ -2,7 +2,7 @@
 
 header {
     text-align: center;
-    padding: 21px;
+    padding: 21px 21px 42px;
     @media #{$media-m} {
       padding: 10%;
     }
@@ -29,7 +29,7 @@ header {
 
 footer {
     @include zero;
-    padding: 21px;
+    padding: 1.4rem;
     @media #{$media-m} {
       padding: 84px 10%;
     }
