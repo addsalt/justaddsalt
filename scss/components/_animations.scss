@@ -33,11 +33,11 @@
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
-    -moz-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
-    -ms-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
-    -o-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
-    animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -webkit-animation: fadeIn 650ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -moz-animation: fadeIn 650ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -ms-animation: fadeIn 650ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -o-animation: fadeIn 650ms cubic-bezier(.33,.28,.18,.99) forwards;
+    animation: fadeIn 650ms cubic-bezier(.33,.28,.18,.99) forwards;
 }
 
 @media #{$media-l} {
@@ -66,11 +66,11 @@
 
 .delay-1 {
     opacity: 0;
-    -webkit-animation-delay: 725ms;
-    -moz-animation-delay: 725ms;
-    -ms-animation-delay: 725ms;
-    -o-animation-delay: 725ms;
-    animation-delay: 725ms;
+    -webkit-animation-delay: 850ms;
+    -moz-animation-delay: 850ms;
+    -ms-animation-delay: 850ms;
+    -o-animation-delay: 850ms;
+    animation-delay: 850ms;
 }
 
 /* Work Animations */
