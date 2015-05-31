@@ -33,31 +33,31 @@
 }
 
 .fadeIn {
-    -webkit-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -moz-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -ms-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
-    -o-animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
-    animation: fadeIn 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+    -webkit-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -moz-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -ms-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
+    -o-animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
+    animation: fadeIn 450ms cubic-bezier(.33,.28,.18,.99) forwards;
 }
 
 @media #{$media-l} {
 
     .fadeInUp {
         opacity: 0;
-        -webkit-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -moz-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -ms-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -o-animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        animation: fadeUp 550ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -webkit-animation: fadeUp 1600ms cubic-bezier(.33,.28,.18,.99), fadeIn 1600ms 100ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -moz-animation: fadeUp 1600ms cubic-bezier(.33,.28,.18,.99), fadeIn 1600ms 100ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -ms-animation: fadeUp 1600ms cubic-bezier(.33,.28,.18,.99), fadeIn 1600ms 100ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -o-animation: fadeUp 1600ms cubic-bezier(.33,.28,.18,.99), fadeIn 1600ms 100ms cubic-bezier(.33,.28,.18,.99) forwards;
+        animation: fadeUp 1600ms cubic-bezier(.33,.28,.18,.99), fadeIn 1600ms 100ms cubic-bezier(.33,.28,.18,.99) forwards;
     }
 
     .fadeInUp2 {
         opacity: 0;
-        -webkit-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -moz-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -ms-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        -o-animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
-        animation: fadeUp 350ms cubic-bezier(.58,.36,.6,.79), fadeIn 850ms 150ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -webkit-animation: fadeUp 350ms cubic-bezier(.33,.28,.18,.99), fadeIn 850ms 150ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -moz-animation: fadeUp 350ms cubic-bezier(.33,.28,.18,.99), fadeIn 850ms 150ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -ms-animation: fadeUp 350ms cubic-bezier(.33,.28,.18,.99), fadeIn 850ms 150ms cubic-bezier(.33,.28,.18,.99) forwards;
+        -o-animation: fadeUp 350ms cubic-bezier(.33,.28,.18,.99), fadeIn 850ms 150ms cubic-bezier(.33,.28,.18,.99) forwards;
+        animation: fadeUp 350ms cubic-bezier(.33,.28,.18,.99), fadeIn 850ms 150ms cubic-bezier(.33,.28,.18,.99) forwards;
     }
     
 }
@@ -80,7 +80,7 @@
     /* Fade up from bottom of figure */
     
     .js-exp-fade {
-        -webkit-animation: jsExpFade 450ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -webkit-animation: jsExpFade 450ms cubic-bezier(.33,.28,.18,.99) forwards;
     }
 
     @-webkit-keyframes jsExpFade {
@@ -110,7 +110,7 @@
     }
     
     .js-slideLeftFade {
-        -webkit-animation: jsLeft 350ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -webkit-animation: jsLeft 350ms cubic-bezier(.33,.28,.18,.99) forwards;
     }
     
     @-webkit-keyframes jsLeft {
@@ -126,7 +126,7 @@
     }
     
     .js-slideRightFade {
-        -webkit-animation: jsRight 350ms cubic-bezier(.58,.36,.6,.79) forwards;
+        -webkit-animation: jsRight 350ms cubic-bezier(.33,.28,.18,.99) forwards;
     }
     
     @-webkit-keyframes jsRight {
