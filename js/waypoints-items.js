@@ -37,6 +37,24 @@ var $frontTrigger = $('#frontcrush');
 var $frontTitle = $('#frontcrush .work-title');
 var $frontSeeOn = $('#frontcrush2 .work-seeon-l');
 
+var $enTrigger = $('#enhansoft');
+var $enTitle = $('#enhansoft .work-title');
+var $enSeeOn = $('#enhansoft .work-seeon-l');
+
+var $leadersTrigger = $('#leaders');
+var $leadersTitle = $('#leaders .work-title');
+var $leadersSeeOn = $('#leaders .work-seeon-l');
+
+
+//Enhansoft
+$enTrigger.waypoint(function() {
+	$enTitle.addClass('js-slideLeftFade');
+}, { offset:'65%' });
+
+$expTrigger.waypoint(function() {
+	$enSeeOn.addClass('js-slideRightFade');
+}, { offset:'65%' });
+
 
 //Explorandes
 $expTrigger.waypoint(function() {
@@ -46,11 +64,6 @@ $expTrigger.waypoint(function() {
 $expTrigger.waypoint(function() {
 	$expSeeOn.addClass('js-slideRightFade');
 }, { offset:'65%' });
-
-//$expTrigger.waypoint(function() {
-//	$expPiece.addClass('js-exp-fade');
-//}, { offset:'65%' });
-
 
 //AirUGo
 $airTrigger.waypoint(function() {
@@ -114,6 +127,16 @@ $frontTrigger.waypoint(function() {
 }, { offset:'65%' });
 
 
+// Student Leaders
+$leadersTrigger.waypoint(function() {
+	$leadersTitle.addClass('js-slideLeftFade');
+}, { offset:'65%' });
+
+$leadersTrigger.waypoint(function() {
+	$leadersSeeOn.addClass('js-slideRightFade');
+}, { offset:'65%' });
+
+
 // Scroll Animation
 
 $win.on('scroll', function() {
@@ -124,7 +147,7 @@ $win.on('scroll', function() {
 
             var dif = $(this).offset().top - ( $(document).scrollTop() + $(window).height()/2 );
 
-            $(this).find( 'img' ).css( 'top', 25 + dif / 2 + 'px' );
+            $(this).find( 'img' ).css( 'top', 35 + dif / 2 + 'px' );
 
        }
 

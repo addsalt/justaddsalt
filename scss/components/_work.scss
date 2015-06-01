@@ -176,10 +176,19 @@
     top: 0px;
     z-index: 5;
     
-    background-image: url(../images/explorandes-nav-bar.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-    
 }
 
+.exp-bar:before {
+    background-image: url(../images/explorandes-nav-bar.png);
+}
+
+.en-bar:before {
+    background-image: url(../images/enhansoft-nav-bar.png);
+}
+
+.usil-bar:before {
+    background-image: url(../images/usil-nav-bar.png);
+}
