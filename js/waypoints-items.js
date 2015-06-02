@@ -35,7 +35,7 @@ var $ipaSeeOn = $('#ipa .work-seeon-l');
 
 var $frontTrigger = $('#frontcrush');
 var $frontTitle = $('#frontcrush .work-title');
-var $frontSeeOn = $('#frontcrush2 .work-seeon-l');
+var $frontSeeOn = $('#fc-2 .work-seeon-l');
 
 var $enTrigger = $('#enhansoft');
 var $enTitle = $('#enhansoft .work-title');

@@ -5,6 +5,18 @@
         overflow-x: hidden;
         overflow-y: hidden;
         position: relative;
+        width: 100%;
+        display:table-cell;
+        vertical-align:middle;
+        display:flex;
+        display:-webkit-flex;
+        flex-direction:row;
+        -webkit-flex-direction:row;
+        flex-flow:column;
+        -webkit-flex-flow:column;
+        flex-direction:column;
+        margin: 0;
+        padding: 0;
         figcaption {
             display: none;
             @media #{$media-l} {
@@ -40,30 +52,6 @@
         }
         .a-text {
             opacity: .6;
-        }
-        .work-bg {
-            width: 180%;
-            -webkit-transform: translateX(-20%);
-            -moz-transform: translateX(-20%);
-            -ms-transform: translateX(-20%);
-            -o-transform: translateX(-20%);
-            transform: translateX(-20%);
-            @media #{$media-m} {
-                width: 125%;
-                -webkit-transform: translateX(-12%);
-                -moz-transform: translateX(-12%);
-                -ms-transform: translateX(-12%);
-                -o-transform: translateX(-12%);
-                transform: translateX(-12%);
-            }
-            @media #{$media-l} {
-                width: 100%;
-                -webkit-transform: translateX(0);
-                -moz-transform: translateX(0);
-                -ms-transform: translateX(0);
-                -o-transform: translateX(0);
-                transform: translateX(0);
-            }
         }
         .work-title {
             position: absolute;
@@ -118,15 +106,7 @@
     }
 }
 
-/* Piece-Specific Stuff */
-
-.bg-woodworks {
-    background-color: #35383a;
-}
-
-.bg-lovestinks {
-    background-color: #f1ad1e;
-}
+/* Parallax */
 
 .scroll-parallax {
     opacity: 1;
@@ -136,7 +116,7 @@
     box-shadow: 0px 2px 20px rgba(0, 0, 0,.7);
 
     width: 90%;
-    max-width: 800px;
+    max-width: 700px;
     
     position: absolute;
     left: 50%;
@@ -154,17 +134,24 @@
     }
 
     @media #{$media-m} {
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 6px 6px 0px 0px;
         top: 2.5em;
     }
 
     @media #{$media-l} {
+        border-radius: 10px 10px 0px 0px;
         top: 7em;
         img {
             position: absolute;
             top: 25px;
             z-index: 1;
         }
+    }
+}
+
+#frontcrush>.scroll-parallax {
+    @media #{$media-l} {
+        top: 8.5em;
     }
 }
 
@@ -181,6 +168,129 @@
     background-position: center top;
 }
 
+/* Piece-Specific Elements */
+
+.tall {
+    height: 380px;
+    @media #{$media-m} {
+        height: 500px;
+    }
+    @media #{$media-l} {
+        height: 680px;
+    }
+}
+
+.medium {
+    height: 380px;
+    @media #{$media-m} {
+        height: 550px;
+    }
+}
+
+.small {
+    height: 275px;
+    float: left;
+}
+
+.half-tall {
+    height: 250px;
+    @media #{$media-l} {
+        height: 340px;
+    }
+}
+
+#work figure.xs {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.center-ins {
+    position: absolute;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+#digestive>img {
+    position: absolute;
+    display: block;
+    width: 270px;
+    top: 6rem;
+    right: -265px; 
+    @media #{$media-m} {
+        width: 400px;
+        top: 10rem;
+        right: -358px;
+    }
+}
+
+#ipa>img {
+   width: 320px;
+}
+
+#lovestinks>img {
+   width: 320px;
+}
+
+#fc-1>img, #fc-2>img, #fc-3>img, #fc-4>img {
+    width: 115px;
+}
+
+#leaders>img, #leaders-2>img, #leaders-3>img, #leaders-4>img {
+    width: 150px;
+    @media #{$media-m} {
+        width: 140px;
+    }
+    @media #{$media-l} {
+        width: 190px;
+    }
+}
+
+#leaders>img, #leaders-3>img {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(50%);
+    @media #{$media-m} {
+        bottom: 10rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%), translateY(0);
+    }
+    @media #{$media-l} {
+        bottom: 12.45rem;
+    }
+}
+
+.student-leaders>div>.medium {
+    @media #{$media-m} {
+        height: 450px;
+    }
+    @media #{$media-l} {
+        height: 550px;
+    }
+}
+
+#lovestinks>img {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    width: 200px;
+    @media #{$media-m} {
+        width: 280px;
+    }
+    @media #{$media-l} {
+        width: 340px;
+    }
+}
+
 .exp-bar:before {
     background-image: url(../images/explorandes-nav-bar.png);
 }
@@ -191,4 +301,96 @@
 
 .usil-bar:before {
     background-image: url(../images/usil-nav-bar.png);
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+#lovestinks {
+    background-image: url(../images/salt-lovestinks-bg.jpg);
+}
+
+#explorandes {
+    background-image: url(../images/salt-explorandes-bg.jpg);
+}
+
+#airugo {
+    background-color: white;
+}
+
+#woodworks {
+    background-color: #35383a;
+}
+
+#usil {
+    background-image: url(../images/salt-USIL-bg.jpg);
+}
+
+#digestive {
+    background-image: url(../images/salt-digestive-bg.jpg);
+}
+
+#ipa {
+    background-color: #35383a;
+}
+
+#enhansoft {
+    background-image: url(../images/salt-enhansoft-bg.jpg);
+    background-position: center top;
+}
+
+#frontcrush {
+    background-color: #68a83e;
+    background-image: url(../images/salt-frontcrush-bg.png);
+    background-size: 650px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#fc-1, #fc-2, #fc-3, #fc-4 {
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+#fc-1 {
+    background-color: #f5f5f5;
+    background-image: url(../images/salt-fc-1.jpg);
+    background-position: right bottom;
+}
+
+#fc-2 {
+    background-color: #41c3e3;
+    background-image: url(../images/salt-fc-2.jpg);
+    background-position: left bottom;
+}
+
+#fc-3 {
+    background-color: #34515f;
+    background-image: url(../images/salt-fc-3.jpg);
+    background-position: right top;
+}
+
+#fc-4 {
+    background-color: #68a83e;
+    background-image: url(../images/salt-fc-4.jpg);
+    background-position: left top;
+}
+
+#leaders {
+    background-color: #644fa1;
+}
+
+#leaders-2 {
+    background-color: #5be4d6;
+}
+
+#leaders-3 {
+    background-color: #ed1a62;
+}
+
+#leaders-4 {
+    background-color: #bcd631;
 }
