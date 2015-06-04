@@ -17,12 +17,6 @@
         flex-direction:column;
         margin: 0;
         padding: 0;
-        figcaption {
-            display: none;
-            @media #{$media-l} {
-                display: block;
-            }
-        }
         h2, p, a {
             @include zero;
         }
@@ -55,9 +49,9 @@
         }
         .work-title {
             position: absolute;
-            top: 1rem;
-            left: 1rem;
             @media #{$media-l} {
+                top: 1rem;
+                left: 1rem;
                 top: 35px;
                 left: 35px;
             }
