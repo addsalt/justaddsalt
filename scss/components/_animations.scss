@@ -98,11 +98,15 @@
     /* Title and Behance slide Left/Right */
     
     .work-title {
-        -webkit-transform: translateX(-150%);
+        @media #{$media-l} {
+            -webkit-transform: translateX(-150%);
+        }
     }
     
     .work-seeon-l {
-        -webkit-transform: translateX(150%);
+        @media #{$media-l} {
+            -webkit-transform: translateX(150%);
+        }
     }
     
     .js-slideLeftFade {

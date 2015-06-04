@@ -147,7 +147,7 @@ $win.on('scroll', function() {
 
             var dif = $(this).offset().top - ( $(document).scrollTop() + $(window).height()/2 );
 
-            $(this).find( 'img' ).css( 'top', 35 + dif / 2 + 'px' );
+            $(this).find( 'img' ).css( 'top', 15 + dif / 2 + 'px' );
 
        }
 

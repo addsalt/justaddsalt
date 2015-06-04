@@ -47,11 +47,15 @@
         .a-text {
             opacity: .6;
         }
+        figcaption {
+            display: block;
+        }
         .work-title {
             position: absolute;
+            top: 1rem;
+            left: 1rem;
             @media #{$media-l} {
-                top: 1rem;
-                left: 1rem;
+                display: block;
                 top: 35px;
                 left: 35px;
             }
@@ -106,16 +110,16 @@
     opacity: 1;
     overflow: hidden;
     
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0,.7);
 
-    width: 90%;
+    width: 91%;
     max-width: 700px;
     
     position: absolute;
     left: 50%;
     bottom: 0;
-    top: 1.25rem;
+    top: 4.5rem;
     
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -123,29 +127,36 @@
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
     
-    @media #{$media-s} {
-        top: 3em;
+    img {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
     }
 
     @media #{$media-m} {
         border-radius: 6px 6px 0px 0px;
-        top: 2.5em;
     }
 
     @media #{$media-l} {
         border-radius: 10px 10px 0px 0px;
         top: 7em;
         img {
-            position: absolute;
             top: 25px;
-            z-index: 1;
         }
     }
 }
 
 #frontcrush>.scroll-parallax {
+    top: 5.57rem;
     @media #{$media-l} {
         top: 8.5em;
+    }
+}
+
+#usil>.scroll-parallax {
+    top: 6.5rem;
+    @media #{$media-l} {
+        top: 7em;
     }
 }
 
@@ -165,7 +176,10 @@
 /* Piece-Specific Elements */
 
 .tall {
-    height: 380px;
+    height: 300px;
+    @media #{$media-s} {
+        height: 380px;
+    }
     @media #{$media-m} {
         height: 500px;
     }
@@ -174,23 +188,36 @@
     }
 }
 
-.medium {
-    height: 380px;
+.tall-usil {
+    height: 300px;
+    @media #{$media-s} {
+        height: 380px;
+    }
+    @media #{$media-m} {
+        height: 500px;
+    }
+    @media #{$media-l} {
+        height: 680px;
+    }
+}
+
+#lovestinks {
+    height: 330px;
     @media #{$media-m} {
         height: 550px;
     }
 }
 
+.medium {
+    @media #{$media-m} {
+        height: 550px;
+    }
+}
+
+
 .small {
     height: 275px;
     float: left;
-}
-
-.half-tall {
-    height: 250px;
-    @media #{$media-l} {
-        height: 340px;
-    }
 }
 
 #work figure.xs {
@@ -209,13 +236,78 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
 }
 
-#digestive>img {
+#leaders-3>img.center-ins {
+    @media #{$media-l} {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        bottom: 0;
+        top: auto;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(0%);
+    }
+}
+
+#leaders>img {
     position: absolute;
     display: block;
-    width: 270px;
-    top: 6rem;
-    right: -265px; 
+    margin: 0 auto;
+    bottom: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(50%);
+    
+    top: -3rem;
     @media #{$media-m} {
+        bottom: 10rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%), translateY(0);
+    }
+    @media #{$media-l} {
+        bottom: 12.45rem;
+    }
+}
+
+#digestive, #ipa {
+    height: 450px;
+    @media #{$media-l} {
+        height: 550px;
+    }
+    @media only screen and (min-width: 71em) {
+        height: 680px;
+    }
+}
+
+#frontcrush, #front-card {
+    height: 320px;
+    @media #{$media-s} {
+        height: 400px;
+    }
+    @media #{$media-l} {
+        height: 550px;
+    }
+}
+
+.half-tall {
+    height: 320px;
+    @media #{$media-m} {
+        height: 200px;
+    }
+    @media #{$media-l} {
+        height: 275px;
+    }
+}
+
+#digestive>img {
+    width: 225px;
+    margin-top: 59px;
+    @media #{$media-l} {
+        width: 350px;
+        margin-top: 129px;
+    }
+    @media only screen and (min-width: 63em) {
+        position: absolute;
+        right: -265px; 
+        display: block;
         width: 400px;
         top: 8.5rem;
         right: -360px;
@@ -223,7 +315,10 @@
 }
 
 #ipa>img {
-   width: 320px;
+    width: 240px;
+    @media #{$media-s} {
+        width: 320px;
+    }
 }
 
 #fc-1>img, #fc-2>img, #fc-3>img, #fc-4>img {
@@ -240,24 +335,8 @@
     }
 }
 
-#leaders>img, #leaders-3>img {
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    bottom: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(50%);
-    @media #{$media-m} {
-        bottom: 10rem;
-        left: 50%;
-        -webkit-transform: translateX(-50%), translateY(0);
-    }
-    @media #{$media-l} {
-        bottom: 12.45rem;
-    }
-}
-
 .student-leaders>div>.medium {
+    height: 450px;
     @media #{$media-m} {
         height: 450px;
     }
@@ -275,9 +354,11 @@
     width: 200px;
     @media #{$media-m} {
         width: 280px;
+        -webkit-transform: translateY(-25%) translateX(-50%);
     }
     @media #{$media-l} {
         width: 340px;
+        -webkit-transform: translateY(0) translateX(-50%);
     }
 }
 
@@ -295,8 +376,15 @@
 
 .bg {
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
+}
+
+.bg-exp {
+    background-size: 200%;
+    @media #{$media-l} {
+        background-size: cover;
+    }
 }
 
 #lovestinks {
@@ -304,6 +392,7 @@
 }
 
 #explorandes {
+    background-color: #35383a;
     background-image: url(../images/salt-explorandes-bg.jpg);
 }
 
